@@ -1,13 +1,11 @@
 #ifndef TIME_MNP
 #define TIME_MNP
 
-#define horasDia 24;
-#define minutosHora 60;
-#define segundosMinuto 60;
+const int horasDia = 24;
+const int minutosHora = 60;
+const int segundosMinuto = 60;
 
 #include <iostream>
-
-using namespace std;
 
 class Tempo{
     private:
@@ -15,6 +13,10 @@ class Tempo{
 
     public:
       void consistencia();
+      void readTime();
+      void printTime();
+      void secIncrement();
+      void secDecrement();
 };
 
 #endif
